@@ -6,19 +6,16 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () =>
-      import('./auth/login/login.module').then((m) => m.LoginPageModule),
-  },
-  {
-    path: 'register',
-    loadChildren: () =>
-      import('./auth/register/register.module').then(
-        (m) => m.RegisterPageModule
-      ),
+      import('../app/auth/login/login.module').then((m) => m.LoginPageModule),
   },
   {
     path: 'home',
     loadChildren: () =>
-      import('./home/home.module').then((m) => m.HomePageModule),
+      import('../app/home/home.module').then((m) => m.HomePageModule),
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
 ];
 
