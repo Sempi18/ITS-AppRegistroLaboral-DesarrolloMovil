@@ -1,0 +1,7 @@
+{
+  "name": "registro-laboral",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
