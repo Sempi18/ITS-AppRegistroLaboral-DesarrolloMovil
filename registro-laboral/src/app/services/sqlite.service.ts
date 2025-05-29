@@ -21,7 +21,8 @@ export class SQLiteService {
         'registro_db',
         false,
         'no-encryption',
-        1
+        1,
+        false
       );
       await this.db.open();
 
